@@ -73,4 +73,5 @@ resumeForm.addEventListener("submit", (event: Event) => {
         li.innerText = skill.trim();
         skillsList.appendChild(li);
     });
+     resumeForm.reset();
 });
