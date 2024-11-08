@@ -41,13 +41,6 @@ resumeForm.addEventListener("submit", (event: Event) => {
     const resumeDisplay = document.getElementById("resume-display") as HTMLElement;
     resumeDisplay.style.display = "flex";
 
-    const resumeHeading = document.createElement("h2");
-    resumeHeading.innerText = "Resume";
-    resumeHeading.style.textAlign = "center";
-    resumeHeading.style.color = "black";
-    resumeHeading.style.marginBottom = "20px";
-    document.body.insertBefore(resumeHeading, resumeDisplay);
-
     // Populate personal information
     (document.getElementById("resume-name") as HTMLElement).innerText = resumeData.name;
     (document.getElementById("display-name") as HTMLElement).innerText = resumeData.name;
